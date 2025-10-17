@@ -10,6 +10,7 @@ pipeline {
         stage('git checkout') {
             steps {
                git branch: 'main',url: 'https://github.com/NaveenReddy0427/Boardgame.git'
+                echo 'checkout the code'
             }
         }
         stage('compile') {
